@@ -3,13 +3,13 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBNoY0bu3-t8lOC_PIJ4rWZCF9gZBVfj24",
-  authDomain: "auth-1cb61.firebaseapp.com",
-  projectId: "auth-1cb61",
-  storageBucket: "auth-1cb61.firebasestorage.app",
-  messagingSenderId: "131945285841",
-  appId: "1:131945285841:web:c1d46c760eaaa9bca65df0",
-  measurementId: "G-SJT7MJF5FQ"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
